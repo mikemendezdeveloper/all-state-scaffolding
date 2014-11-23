@@ -23,7 +23,8 @@
 					<li>AllState Scaffolding: 1-888-628-6222 <span class="sepBar">|</span></li>
 					<li>Vacaville Office: 1-707-448-4100 <span class="sepBar">|</span></li>
 					<li>Sacramento Office: 1-916-441-5900 <span class="sepBar">|</span></li>
-					<li><a href="allstatescaffolding@yahoo.com">Email: allstatescaffolding@yahoo.com</a></li>
+					<li><a href="allstatescaffolding@yahoo.com">Email: allstatescaffolding@yahoo.com</a><span class="sepBar">|</span></li>
+					<li>Copyright © AllState Scaffolding, all rights reserved.</li>
 				</ul>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->

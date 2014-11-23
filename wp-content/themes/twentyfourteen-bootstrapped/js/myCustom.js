@@ -4,7 +4,6 @@
 	var wpAdminBar = document.getElementById('wpadminbar');
 
 	if (!!wpAdminBar) {
-		console.log("ysy");
 	    (function () {
 	    var navBar = jQuery('.navbar-fixed-top')[0];
 	    navBar.style.marginTop = '32px';

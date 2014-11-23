@@ -23,8 +23,11 @@ body {
 body.admin-bar .navbar-fixed-top {
 margin-top: 32px;
 }
-/* End Admin view */
 
+/* End Admin view */
+a:hover, a:focus{
+	text-decoration: none;
+}
 .site {
 	max-width: none;
 }
@@ -75,6 +78,9 @@ margin-top: 32px;
 	.site-footer li {
 		display: inline !important;
 	}
+	.site-footer {
+		position: fixed !important;
+	}
 }
 
 /* Util Styles */
@@ -106,7 +112,6 @@ margin-top: 32px;
 	margin-bottom: 20px;
 }
 .hp-thumbnail {
-	max-height: 150px; 
 	overflow: hidden;
 }
 #content .hp-thumb-title {
@@ -118,7 +123,7 @@ margin-top: 32px;
 	font-weight: 300;
 	text-transform: uppercase;
 }
-a.seal {
+.seal {
 margin: 40px auto;
 display: inline-block;
 width: 100%;
@@ -131,6 +136,7 @@ background: rgb(226, 226, 226);
 border-radius: 10px;
 box-shadow: 1px 1px 2px rgb(178, 178, 178);
 padding: 20px;
+margin-bottom: 60px;
 }
 .sealText{
     color: rgb(64, 64, 64);
@@ -375,7 +381,7 @@ ul.dropdown-menu li:hover, ul.dropdown-menu li a:hover {
 }
 /* Footer */
 .site-footer {
-	position: fixed;
+	position: relative;
 	width: 100%;
 	bottom: 0px;
 }
