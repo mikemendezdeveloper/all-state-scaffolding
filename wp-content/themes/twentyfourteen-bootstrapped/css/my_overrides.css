@@ -15,13 +15,12 @@ $screen-lg: 1200px !default;
     /*
      * styles go here
 */
-
+html {
+	height: 100%;
+}
 body {
 	background: rgb(188, 188, 188) !important;
-}
-/*Admin Bar in view */
-body.admin-bar .navbar-fixed-top {
-margin-top: 32px;
+	height: 100%;
 }
 
 /* End Admin view */
@@ -33,6 +32,7 @@ a:hover, a:focus{
 }
 .site-content {
 	 margin-left: 0px; 
+	 height: 100%;
 }
 
 .content-area, .content-sidebar {
@@ -45,17 +45,13 @@ a:hover, a:focus{
 	color: #ffffff;
 	margin: 0px;
 	letter-spacing: 1px;
-	sdfasd: sdfjkasdlf;
 }
 .gallery #content, #home-content, .two-col-page #content {
 	background: rgb(255, 255, 255);
 	border-radius: 10px;
-	padding-top: 35px;
-	padding-left: 45px;
+	padding: 35px 45px 45px;
 	box-shadow: 2px 19px 40px rgb(71, 71, 71);
-	padding-right: 0px;
 	border: 2px solid #E9E9E9;
-	padding-bottom: 45px;
 }
 /* Phone number */
 #phone {
@@ -66,6 +62,9 @@ a:hover, a:focus{
 	text-shadow: 2px 2px 4px #383838;
 	letter-spacing: 1px;
 	padding-right: 10px;
+}
+#main-content {
+	margin-bottom: 200px;
 }
 @media (min-width: 768px) {
 	#phone {
@@ -78,8 +77,10 @@ a:hover, a:focus{
 	.site-footer li {
 		display: inline !important;
 	}
+	
 	.site-footer {
-		position: fixed !important;
+		position: relative; !important;
+		bottom: 0px;
 	}
 }
 
@@ -188,7 +189,7 @@ background: -ms-linear-gradient(top,  rgba(249,249,249,1) 0%,rgba(175,175,175,1)
 background: linear-gradient(to bottom,  rgba(249,249,249,1) 0%,rgba(175,175,175,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#afafaf',GradientType=0 ); /* IE6-9 */
     left: 0;
-    position: fixed;
+    position: relative;
     right: 0;
     z-index: 999;
 	height: 80px;
@@ -200,11 +201,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', end
 	top: 60px;
 }
 .navbar-fixed-top {
-    top: 80px;
-}
-.navbar-fixed-top {
 	border-top: 1px solid #efefef;
 }
+.navbar.navbar-default.navbar-fixed-top {
+	margin-bottom: 0px;
+	position: relative;
+}
+.navbar-toggle {
+	right: 15px;
+	position: absolute;
+}
+
+.container > .navbar-header, .container > .navbar-collapse {
+	height: 50px;
+}
+
 .navbar-collapse.collapse, .navbar-header {
 		background: -webkit-gradient(linear, 0 100%, 0 0, from(#000000), color-stop(0.5, #303030), color-stop(0.51, #050505), to(#000000));
 		background: -webkit-linear-gradient(#000000 0%, #303030 50%, #050505 51%, #000000 100%);
@@ -279,11 +290,6 @@ ul.dropdown-menu li:hover, ul.dropdown-menu li a:hover {
 }
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
 	display: inline;
-}
-/* Leave this at 103, it will look fine when logged out of admin */
-#main-content-area {
-	margin-top: 104px;
-	/* background: #ffffff; */
 }
 .main-content.gallery, .main-content.two-col-page {
 	margin-top: 60px;
@@ -381,8 +387,8 @@ ul.dropdown-menu li:hover, ul.dropdown-menu li a:hover {
 }
 /* Footer */
 .site-footer {
-	position: relative;
 	width: 100%;
+	position: relative;
 	bottom: 0px;
 }
 .site-footer .sepBar {
@@ -397,6 +403,16 @@ ul.dropdown-menu li:hover, ul.dropdown-menu li a:hover {
 	list-style: none;
 	display: block;
 	font-size: 14px;
+}
+
+/* Contact Us */
+.contact-us li {
+	list-style: none;
+	margin-bottom: 10px;
+}
+.contact-us li span{
+	font-weight: bold;
+
 }
 
 
